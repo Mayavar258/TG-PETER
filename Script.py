@@ -9,8 +9,8 @@ class script(object):
 # ⚠️ Please don't change our credits 👇🏻
 
     ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/at_xu_l07>𝙰𝙹_𝚃𝙶</a>
-✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/moviehub_2k24>MH_HUB</a>
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=tg://settings>This Person</a>
+✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/Good_nation</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
