@@ -19,6 +19,16 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+START_TEXT = """Hey 👋 {}😍
+
+I'm File Searcher bot
+
+Here you can Search files in Our Bot. JusT Start Typing...
+
+Auto Upload Feature Enabled
+
+Pin Our Update Channel to Get Instant Notifications"""
+
 @Client.on_message(filters.command("start") & filters.private)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -43,7 +53,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', callback_data='start')
+            InlineKeyboardButton('Channel Updates', url="https://t.me/MOVIES_DATA_UPDATES"),
+            InlineKeyboardButton('Shate now', callback_data='share')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgIAAxkBAAKKAAFkHAda7cEwnGhLkERsPowfgFFD2wACVBYAAtB7QUn8uVjZ80ZWKB4E") 
@@ -51,7 +62,7 @@ async def start(client, message):
         await m.delete()        
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=script.SUR_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            caption=START_TEXT.format(message.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
