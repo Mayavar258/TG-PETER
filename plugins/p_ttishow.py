@@ -11,7 +11,7 @@ import asyncio
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
-@Client.on_message(filters.new_chat_members & filters.group)
+#@Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
     r_j_check = [u.id for u in message.new_chat_members]
     if temp.ME in r_j_check:
