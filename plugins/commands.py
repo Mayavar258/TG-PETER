@@ -50,7 +50,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
+            InlineKeyboardButton('Channel Updates🍿', url="https://t.me/MOVIES_DATA_UPDATES"),
             InlineKeyboardButton('Share now🚩', url='https://t.me/share/url?url=https%3A//t.me/Cat_movie_bot')
+            ],[
+            InlineKeyboardButton('Demo✨', url='https://t.me/BYPASS_DEMO_VIDEO')
         ]]               
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_sticker("CAACAgIAAxkBAAKKAAFkHAda7cEwnGhLkERsPowfgFFD2wACVBYAAtB7QUn8uVjZ80ZWKB4E") 
