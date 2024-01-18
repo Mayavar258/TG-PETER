@@ -92,7 +92,7 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002006919665').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
@@ -106,7 +106,7 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 #No_result
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', True))
-NO_RESULTS_CHANNEL = int(environ.get("NO_RESULTS_CHANNEL", "-1002014717184"))
+NO_RESULTS_CHANNEL = int(environ.get("NO_RESULTS_CHANNEL", "-1002070840966"))
 
 # Others
 
@@ -115,13 +115,13 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/TAMILNEWMOVIETEAM")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/moviecafe_01")
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/TAMILNEWMOVIETEAM")
+S_GROUP = environ.get('S_GROUP',"https://t.me/MOVIES_DATA_UPDATES")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MOVIES_DATA_UPDATES")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/MOVIES_DATA_UPDATES")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺...')
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001283199142'))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1001283199142'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TAMILNEWMOVIETEAM')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1002079130140'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002070840966'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MOVIES_DATA_UPDATES')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -132,7 +132,7 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', '-1001283199142'))
+INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', 'LOG_CHANNEL'))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
