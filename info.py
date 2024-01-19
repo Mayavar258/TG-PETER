@@ -88,7 +88,7 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 #url links
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Tnshort.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'd70d2f40cefc0a39d81e1b2be77d409da78f8aed')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
