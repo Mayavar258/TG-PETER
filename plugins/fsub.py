@@ -98,8 +98,6 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
     except UserNotParticipant:
         text="""**♦️ READ THIS INSTRUCTION ♦️
 
-🗣 നിങ്ങൾക്ക് സിനിമ കിട്ടണമെങ്കിൽ താഴെക്കാണുന്ന 🎗 𝐉𝐨𝐢𝐧 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎗 എന്നത് ക്ലിക്ക് ചെയ്ത് Request to Join channel എന്നത് ക്ലിക്ക് ചെയ്ത് 🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄 കൊടുത്ത ശേഷം സിനിമ കിട്ടുന്നതാണ്😍
-
 🗣 In Order To Get The Movie Requested By You in Our Group, You Must Have To Join Our Official Channel First By Clicking 🎗 𝐉𝐨𝐢𝐧 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎗 Button or the Link shown Below. After That, Click 🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔄 Button. I'll Send You That Movie File📂**"""
 
         buttons = [
