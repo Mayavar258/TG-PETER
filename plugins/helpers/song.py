@@ -108,7 +108,7 @@ async def vsong(client, message: Message):
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
-    mio = mi["search_result"]
+    mio = mi.get("search_result")
     mo = mio[0]["link"]
     thum = mio[0]["title"]
     fridayz = mio[0]["id"]
