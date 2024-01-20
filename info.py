@@ -97,7 +97,7 @@ TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = "-1002024087674"
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
 REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1002024087674")
