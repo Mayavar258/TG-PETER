@@ -287,7 +287,7 @@ Name - {}
 ★Requested by</b> : {message.from_user.mention}
 """
 
-    CUSTOM_FILE_CAPTION = """<b>FILE : <code>{file_name}</code></b>\n\n @MOVIES_DATA_UPDATES """
+    CUSTOM_FILE_CAPTION = """ @movie_data_updates """
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
