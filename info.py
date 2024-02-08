@@ -42,9 +42,9 @@ class evamaria(Client):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1735823'))
-API_HASH = environ.get('API_HASH', '95a58d18baff383306dcc35ce847b71d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6745783924:AAHHlp8MxrdKhmi4cS-Y2mluSwdlWKIOoOI')
+API_ID = int(environ.get('API_ID', '1522127'))
+API_HASH = environ.get('API_HASH', '1252ffe16baf341bfd7236f92df76b0e')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6821673610:AAEBlmSYvWFkEDZnG1lGJz6DBCNzqkqOFKg')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -86,8 +86,8 @@ MONGO_URL = os.environ.get('MONGO_URL', "")
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #url links
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '0da6192eb03843da62bdb50e5263e016baf7a963')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'd9021e1263d10c3a288f360f41c96e5426884193')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 'True'))
 
 #Auto approve 
