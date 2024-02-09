@@ -1415,7 +1415,7 @@ async def auto_filter(client, msg, spoll=False):
                     if settings['auto_delete']:
                         await asyncio.sleep(600)
                         await hmm.delete()
-                        thega=await message.reply_text
+                        thega=await message.reply_text(
                             text=f"⚙️ {message.from_user.mention} Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️")
                         await asyncio.sleep(37)                   
                         await thega.delete()
